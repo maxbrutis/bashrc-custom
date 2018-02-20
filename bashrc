@@ -71,5 +71,6 @@ PS1="\n\[\e[32;1m\](\[\e[37;1m\]\u\[\e[32;1m\])-(\[\e[37;1m\]$(parse_git_branch)
 
 # bash-git-prompt
 # https://github.com/magicmonty/bash-git-prompt
+# git clone https://github.com/magicmonty/bash-git-prompt.git .bash-git-prompt --depth=1
 GIT_PROMPT_ONLY_IN_REPO=1
 source ~/.bash-git-prompt/gitprompt.sh
