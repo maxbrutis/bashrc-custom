@@ -67,11 +67,11 @@ parse_git_branch() {
 }
 
 #PS1="\n\[\e[32;1m\](\[\e[37;1m\]\u\[\e[32;1m\])-(\[\e[37;1m\]jobs:\j\[\e[32;1m\])-(\[\e[37;1m\]\w\[\e[32;1m\])\n(\[\[\e[37;1m\]! \!\[\e[32;1m\])-> \[\e[0m\]"
-PS1="\n\[\e[32;1m\](\[\e[37;1m\]\u\[\e[32;1m\])-(\[\e[37;1m\]$(parse_git_branch)\[\e[32;1m\])-(\[\e[37;1m\]\w\[\e[32;1m\])\n(\[\[\e[37;1m\]! \!\[\e[32;1m\])-> \[\e[0m\]"
+PS1="\n\[\e[37;1m\]\w\[\e[32;1m\] [\[\e[35;1m\]\u\[\e[36;1m\]@\h\[\e[32;1m\]]\n\[\[\e[37;0m\]\A \[\e[32;1m\]$ \[\e[0m\]"
 
 # bash-git-prompt
 # https://github.com/magicmonty/bash-git-prompt
 # git clone https://github.com/magicmonty/bash-git-prompt.git .bash-git-prompt --depth=1
-GIT_PROMPT_THEME=Solarized
 GIT_PROMPT_ONLY_IN_REPO=1
+GIT_PROMPT_THEME=Solarized
 source ~/.bash-git-prompt/gitprompt.sh
